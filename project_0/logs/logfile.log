@@ -1,0 +1,798 @@
+[ERROR] 2019-06-17 14:33:33.478 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:18) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 08:38:52.989 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:40) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 08:41:06.595 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:40) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 08:41:45.190 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:40) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 08:45:23.062 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:40) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 13:23:58.145 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:33) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at util.Application.main(Application.java:46) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 14:46:21.783 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 14:46:43.207 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 14:49:34.023 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 14:50:15.912 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:43:03.795 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:50:16.262 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:52:37.945 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:55:51.904 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:56:11.201 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 15:56:48.104 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 16:15:14.869 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:55) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:11) [classes/:?]
+	at project_0.Menu.main(Menu.java:22) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 17 more
+[ERROR] 2019-06-18 19:36:52.197 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:2086) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3772) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:63) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:184) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:147) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-18 19:44:27.775 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:2086) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3772) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3822) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:63) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:185) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:147) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-19 09:19:56.989 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3757) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:264) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.GeneratedResultSet.getInt(GeneratedResultSet.java:554) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:41) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:13) [classes/:?]
+	at project_0.Menu.main(Menu.java:23) [classes/:?]
+[ERROR] 2019-06-19 09:23:08.226 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3757) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:264) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.GeneratedResultSet.getInt(GeneratedResultSet.java:554) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:41) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:13) [classes/:?]
+	at project_0.Menu.main(Menu.java:23) [classes/:?]
+[ERROR] 2019-06-19 09:24:06.753 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3757) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:264) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.GeneratedResultSet.getInt(GeneratedResultSet.java:554) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:41) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:13) [classes/:?]
+	at util.Application.main(Application.java:18) [classes/:?]
+[ERROR] 2019-06-19 09:24:48.913 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3757) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:264) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.GeneratedResultSet.getInt(GeneratedResultSet.java:554) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.getAll(AccountOracle.java:41) [classes/:?]
+	at dao.AccountService.getAllAccounts(AccountService.java:13) [classes/:?]
+	at project_0.Menu.main(Menu.java:23) [classes/:?]
+[ERROR] 2019-06-19 09:58:59.522 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:72) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:196) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 10:01:33.894 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:72) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:196) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 10:05:06.736 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:72) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:196) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 10:22:45.189 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:196) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 10:25:44.509 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-00928: missing SELECT keyword
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00928: missing SELECT keyword
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 10:28:59.327 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10470) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10451) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5240) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:255) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:67) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-19 10:29:37.719 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10470) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10451) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5240) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:255) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:67) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-19 10:29:55.343 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10470) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10451) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5240) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:255) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:67) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-19 10:32:21.671 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10470) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setFormOfUseInternal(OraclePreparedStatement.java:10451) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5240) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:255) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:67) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+[ERROR] 2019-06-19 10:39:05.044 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insert(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insert(AccountService.java:16) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:194) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:68) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 12:08:24.014 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (ROOT.SYS_C005332) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insertCustomer(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insertCustomer(AccountService.java:19) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:191) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:151) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:93) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:35) [classes/:?]
+	at project_0.Menu.main(Menu.java:30) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00001: unique constraint (ROOT.SYS_C005332) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 13:30:46.609 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (ROOT.SYS_C005334) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insertCustomer(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insertCustomer(AccountService.java:19) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:192) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:152) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:94) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:36) [classes/:?]
+	at project_0.Menu.main(Menu.java:31) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00001: unique constraint (ROOT.SYS_C005334) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
+[ERROR] 2019-06-19 13:39:32.408 [main] AccountOracle - Unable to execute sql query
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (ROOT.SYS_C005335) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3865) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3845) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	at dao.AccountOracle.insertCustomer(AccountOracle.java:73) [classes/:?]
+	at dao.AccountService.insertCustomer(AccountService.java:19) [classes/:?]
+	at project_0.Menu.createCust(Menu.java:192) [classes/:?]
+	at project_0.Menu.createAccount(Menu.java:152) [classes/:?]
+	at project_0.Menu.checkFirstVisit(Menu.java:94) [classes/:?]
+	at project_0.Menu.runMenu(Menu.java:36) [classes/:?]
+	at project_0.Menu.main(Menu.java:31) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00001: unique constraint (ROOT.SYS_C005335) violated
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.1.0.jar:12.2.0.1.0]
+	... 21 more
